@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lathi Sports Orginization India</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="data:image/png;base64,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" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./style1.css">
+  <link rel="stylesheet" href="./style3.css">
+  <link rel="stylesheet" href="assets/css/tailwind.css" />
+
+    <script defer src="assets/js/alpine.min.js"></script>
+
+  <script defer src="assets/js/alpine.min.js"></script>
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-one.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-two.png">
+  <link rel="preload" as="image" href="./assets/images/heart-rate.svg">
+  <link rel="preload" as="image" href="./assets/images/calories.svg">
+
+</head>
+
+<body  background="white.jpg"  id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/l1-removebg-preview.png" width="100" height="100" >
+        <span  class="span"> <em>LSOI</em></e>  </span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="../index.html" class="navbar-link active" data-nav-link><strong>Home</strong></a>
+          </li>
+
+          <li>
+            <a href="../aboutus/index1.html" class="navbar-link" data-nav-link><strong>About Us</strong></a>
+          </li>
+
+          <li>
+            <a href="../commitee/index.html" class="navbar-link" data-nav-link><strong>Committee</strong></a>
+          </li>
+
+          <li>
+            <a href="../gallary/index1.html" class="navbar-link" data-nav-link>Gallary</a>
+          </li>
+
+          <li>
+            <a href="../events/index1.html" class="navbar-link" data-nav-link>Events/Tournaments/Seminars</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="/./contact/index1.html" class="btn btn-secondary">Contact Us!</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+  <div class="home">
+    <video autoplay muted loop>
+      <source src="about.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"></div>
+    <div class="home-content">
+      <BR>
+      <BR>
+      <BR>
+      <BR>
+      <h1>LATHI SPORTS ORGINIZATION INDIA</h1>
+      
+    </div>
+  </div>
+ 
+
+
+
+
+
+
+
+
+
+  <section class="logos">
+    <div class="logos-slide">
+      <img src="./logoslide/l1.png" />
+        <img src="./logoslide/l2.png" />
+        <img src="./logoslide/l3.png" />
+        <img src="./logoslide/l4.png" />
+        <img src="./logoslide/l5.png" />
+        <img src="./logoslide/l6.png" />
+        <img src="./logoslide/l7.png" />
+        <img src="./logoslide/l8.png" />
+        <img src="./logoslide/l9.png" />
+        <img src="./logoslide/l10.png" />
+        <img src="./logoslide/l11.png" />
+        <img src="./logoslide/l12.png" />
+    
+    
+    
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+<!-- ====== Team Section Start -->
+<section class="pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+  <div class="container mx-auto">
+    <div class="-mx-4 flex flex-wrap">
+      <div class="w-full px-4">
+        <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+          <span class="mb-2 block text-lg font-semibold text-primary">
+            
+          </span>
+          <h2
+            class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]"
+          >
+           Witness Our Journey
+          </h2>
+          
+        </div>
+      </div>
+    </div>
+
+    
+<!-- ====== Team Section End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="p1.jpg" style="width:100%">
+    <div class="text">Technical and refree seminar</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="p2.jpg" style="width:100%">
+    <div class="text">Celebrating</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="p3.jpg" style="width:100%">
+    <div class="text">Yudh</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="p4.jpg" style="width:100%">
+    <div class="text">Tournament</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="p5.jpg" style="width:100%">
+    <div class="text">Techinque</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+
+
+</div>
+
+
+
+
+
+    
+
+   
+
+<!-- ====== Team Section Start -->
+<section class="pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+  <div class="container mx-auto">
+    <div class="-mx-4 flex flex-wrap">
+      <div class="w-full px-4">
+        <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+          <span class="mb-2 block text-lg font-semibold text-primary">
+            Explore Our Lathi Journey - Photo Gallery
+          </span>
+          <h2
+            class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]"
+          >
+          Explore Our Lathi Journey 
+          </h2>
+          
+        </div>
+      </div>
+    </div>
+</div>
+    
+<!-- ====== Team Section End -->
+
+
+
+<div class="row">
+  <div class="column">
+    <img src="p1.jpg">
+    <img src="p2.jpg">
+    <img src="p3.jpg">
+    <img src="p4.jpg">
+    <img src="p5.jpg">
+    <img src="p5.jpg">
+    <img src="p6.jpg">
+  </div>
+  <div class="column">
+    <img src="./photos/p7.jpg">
+    <img src="./photos/p8.jpg">
+    <img src="./photos/p9.jpg">
+    <img src="./photos/p10.jpg">
+    <img src="./photos/p11.jpg">
+    <img src="./photos/p12.jpg">
+    <img src="./photos/p13.jpg">
+  </div>
+  <div class="column">
+    <img src="./photos/p14.jpg">
+    <img src="./photos/p15.jpg">
+    <img src="./photos/p16.jpg">
+    <img src="./photos/16.jpg">
+    <img src="./photos/17.jpg">
+    <img src="./photos/18.jpg">
+    <img src="./photos/19.jpg">
+  </div>
+  <div class="column">
+    <img src="./photos/20.jpg">
+    <img src="./photos/21.jpg">
+    <img src="./photos/22.jpg">
+    <img src="./photos/23.jpg">
+    <img src="./photos/24.jpg">
+    <img src="./photos/25.jpg">
+    <img src="./photos/26.jpg">
+    <img src="./photos/54.jpg">
+    <img src="./photos/55.jpg">
+    <img src="./photos/56.jpg">
+    <img src="./photos/57.jpg">
+    <img src="./photos/58.jpg">
+    <img src="./photos/59.jpg">
+    <img src="./photos/60.jpg">
+  </div>
+  <div class="column">
+    <img src="./photos/27.jpg">
+    <img src="./photos/28.jpg">
+    <img src="./photos/29.jpg">
+    <img src="./photos/30.jpg">
+    <img src="./photos/31.jpg">
+    <img src="./photos/32.jpg">
+    <img src="./photos/33.jpg">
+  </div>
+  <div class="column">
+    <img src="./photos/34.jpg">
+    <img src="./photos/35.jpg">
+    <img src="./photos/36.jpg">
+    <img src="./photos/37.jpg">
+    <img src="./photos/38.jpg">
+    <img src="./photos/39.jpg">
+    <img src="./photos/40.jpg">
+  </div>
+  <div class="column">
+    <img src="./photos/41.jpg">
+    <img src="./photos/42.jpg">
+    
+    <img src="./photos/43.jpg">
+    <img src="./photos/44.jpg">
+    <img src="./photos/45.jpg">
+    <img src="./photos/46.jpg">
+    <img src="./photos/47.jpg">
+  </div> <div class="column">
+    <img src="./photos/48.jpg">
+    <img src="./photos/49.jpg">
+    <img src="./photos/50.jpg">
+    <img src="./photos/51.jpg">
+    <img src="./photos/52.jpg">
+    <img src="./photos/53.jpg">
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+           
+            <img src="./assets/images/mainlogo-removebg-preview.png" width="100" height="100" >
+            <span class="span"><em>L S O I</em></span>
+          </a>
+
+          <p class="footer-brand-text">
+            LATHI SPORTS ORGINIZATION INIDA EMBARSSING TRADITION.
+          </p>
+
+          <div class="wrapper">
+
+            <img src="./assets/images/footer-clock.png" width="34" height="34" loading="lazy" alt="Clock">
+
+            <ul class="footer-brand-list">
+
+              <li>
+                <p class="footer-brand-title">Monday - Friday</p>
+
+                <p>9:00 Am - 7:00Pm</p>
+              </li>
+
+              <li>
+                <p class="footer-brand-title">Saturday - Sunday</p>
+
+                <p>9:00Am - 2:00Pm</p>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Links</p>
+          </li>
+
+          <li>
+            <a href="/index.html" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="/./aboutus/index1.html" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="/./gallary/index1.html" class="footer-link">Gallary</a>
+          </li>
+
+          <li>
+            <a href="/./events/index1.html" class="footer-link">EVENTS/TOURNAMENTS</a>
+          </li>
+
+          <li>
+            <a href="/./contact/index1.html" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Contact Us</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+
+            <address class="address footer-link">
+              WZ 243 TILAK NAGAR NEW DELHI 110018
+            </address>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:18001213637" class="footer-link">+91 8130026282</a>
+
+              <a href="tel:+915552348765" class="footer-link">+91 9713586607</a>
+            </div>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@fitlife.com" class="footer-link"></a>
+
+              <a href="mailto:services@fitlife.com" class="footer-link">lathisportorginizationindia@gmail.com</a>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Newsletter</p>
+          </li>
+
+          <li>
+            <form action="" class="footer-form">
+              <input type="email" name="email_address" aria-label="email" placeholder="Email Address" required
+                class="input-field">
+
+              <button type="submit" class="btn btn-primary" aria-label="Submit">
+                <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </li>
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="https://www.facebook.com/lathiindia.in/" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.youtube.com/@LathiSportOrganisation" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.youtube.com/@LathiSportOrganisation" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 LSOI. All Rights Reserved By <a href="#" class="copyright-link">LATHI SPORT ORGINIZATION INDIA</a>
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Terms & Condition</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
