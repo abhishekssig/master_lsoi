@@ -47,3 +47,40 @@ video {
   font-size: 50px;
   line-height: 1.1;
 }
+
+.container7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between the members */
+  flex-wrap: wrap; /* Wrap members on smaller screens */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Optional: background color for better visibility */
+}
+
+.member7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.responsive-image7 {
+  max-width: 30%; /* Adjust this value to control the maximum width */
+  max-height: 800px; /* Adjust this value to control the maximum height */
+  width: auto;
+  height: auto;
+  border-radius: 10px; /* Optional: for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: for a shadow effect */
+}
+
+.name-label {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
